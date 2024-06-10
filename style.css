@@ -1,30 +1,9 @@
-/* Me Fonts */
+/* My Fonts */
 @font-face {
     font-family: 'UniversRoman';
     font-weight: normal;
     font-style: normal;
-    src: url('https://files.cargocollective.com/c769845/uv____.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'CanelaReg';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://files.cargocollective.com/c769845/Canela-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'CanelaThin';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://files.cargocollective.com/c769845/Canela-Thin.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'NeueHaasUnicaProBold';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://files.cargocollective.com/c769845/Neue-Haas-Unica-Pro-Bold.woff') format('woff');
+    src: url('https://github.com/hannahstephaniewang/Personal-Website/blob/b1c71dc970a6732d45b813d8294d98ea63c2aa15/uv____.woff') format('woff');
 }
 
 /**
