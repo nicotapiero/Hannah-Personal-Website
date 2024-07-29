@@ -39,10 +39,6 @@ small.main{
 }
 
 /*Hover Underline Animation*/
-<div class="link-background">
-    <a href="" class="middle">Hover Over Me</a>
-</div>
-
 [data-predefined-style="true"] small a.middle {
 	position: relative;
 }
@@ -63,4 +59,66 @@ small.main{
 [data-predefined-style="true"] small a.middle:hover:before {
 	visibility: hidden;
     transform: scaleX(0);
+}
+
+/*Carousel*/
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    touch-action: pan-y; /* Enable vertical panning */
+}
+
+.carousel input[type="radio"] {
+    display: none;
+}
+
+.carousel-images {
+    position: relative;
+    height: 400px; /* Adjust as needed */
+}
+
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#slide1:checked ~ .carousel-images #image1,
+#slide2:checked ~ .carousel-images #image2,
+#slide3:checked ~ .carousel-images #image3,
+#slide4:checked ~ .carousel-images #image4 {
+    opacity: 1;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls .control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carousel-controls .control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
