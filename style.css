@@ -6,14 +6,61 @@
     src: url('uv____.woff');
 }
 
-/*Class*/
+@font-face {
+    font-family: 'UniversItalic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('uv____italic.woff');
+}
+
+/*Element*/
 small {	
-	display: inline-block;
-	font-size: 2rem;
+	font-size: 20px;
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.75);
 	font-family:UniversRoman;
 	font-style: normal;
 	line-height: 1.3;
+	padding: 10px;
+	position: relative;
 }
 
+/*Class*/
+small.left{
+	float: left;
+}
+
+small.right{
+	float: right;
+}
+
+small.main{
+	float: inherit;
+}
+
+/*Hover Underline Animation*/
+<div class="link-background">
+    <a href="" class="middle">Hover Over Me</a>
+</div>
+
+[data-predefined-style="true"] small a.middle {
+	position: relative;
+}
+
+[data-predefined-style="true"] small a.middle:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0.75em;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out;
+}
+
+[data-predefined-style="true"] small a.middle:hover:before {
+	visibility: hidden;
+    transform: scaleX(0);
+}
